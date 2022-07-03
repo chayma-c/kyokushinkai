@@ -4,8 +4,8 @@ import * as d from "./menu.data"
 import { Link } from 'react-router-dom'
 const Menu = () => {
   const [name,setname]=useState(d.menulist[0].title)
-  const list=d.menulist.map((element,key)=>{
-    const isselect= element===name
+  const list=d.menulist.map((element)=>{
+    const isselect= element.title===name
     return(
       <div>
         <Link to ={element.adress} style={{textDecoration:"none",color:"black"}}>

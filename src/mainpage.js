@@ -1,6 +1,5 @@
 import React,{useEffect,useState} from "react";
-import ClipLoader from "react-spinners/ClipLoader";
-import { css } from "@emotion/react";
+
 import * as s from "./mainpage.style"
 import Menu from "./menu";
 import {Routes,
@@ -16,12 +15,7 @@ setTimeout(() => {
   is_loding(false)
 }, 4000);
   },[])
-  const override = css`
 
-  margin-top: 30vh;
-  border-color: white;
-  margin-left:50px;
-`;
     return(
       loding ?
       <s.animation_section>

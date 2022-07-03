@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { jsx, css, keyframes } from '@emotion/react'
+import {  keyframes } from '@emotion/react'
 const bounce = keyframes`
    0% {
     color:black;
@@ -23,12 +23,12 @@ const background = keyframes`
 `
 
 export const main_container=styled.div`
-height:300vh;
+min-height:300vh;
 background-color: #ff6b6b;
 background-image: linear-gradient(315deg, #ff6b6b 0%, #d3d3d3 74%);
 `
 export const body=styled.div`
-height:200vh;
+min-height:200vh;
 padding-top:50vh;
 `
 export const animation=styled.img`
