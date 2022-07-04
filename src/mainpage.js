@@ -7,7 +7,7 @@ import {Routes,
   } from "react-router-dom";
 import Home from "./component/home/home";
 import Contact from "./component/contact";
-import About from "./component/about";
+import Joinus from "./component/joinus/joinus";
 const Mainpage=()=>{
   const [loding,is_loding]=useState(true)
   useEffect(()=>{
@@ -19,6 +19,9 @@ setTimeout(() => {
     return(
       loding ?
       <s.animation_section>
+        <s.imgloadleft  src = "./leftimg.png" />
+
+        <s.imgloadright src="./right1.png"/>
       <s.animation src="https://upload.wikimedia.org/wikipedia/commons/4/46/Kyokushinkai.svg"/>
       </s.animation_section>
       :
@@ -27,7 +30,7 @@ setTimeout(() => {
             <s.body>
             <Routes>
         <Route path="/" element={ <Home/> } />
-        <Route path="/about" element={ <About/> } />
+        <Route path="/joinus" element={ <Joinus/> } />
         <Route path="/contact" element={ <Contact/> } />
       </Routes>
       </s.body>
