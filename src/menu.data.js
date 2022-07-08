@@ -1,11 +1,11 @@
 import React,{useState,useContext} from 'react'
 import {Socketcontext} from "./setting/context"
-const anglais = {title : "Kyokoshinkai", menulist :[{title:"Home",adress:"/"},{title:"Wanna join us?",adress:"/joinus"},{title:"Login",adress:"/login"}]}
-const arabe = {title : "كيوكشنكاي", menulist :[{title:"المنزل",adress:"/"},{title:"تريد الانضمام",adress:"/joinus"},{title:"تسجيل",adress:"/login"}]}
-
+const anglais = {title : "Kyokushinkai", menulist :[{title:"Home",adress:"/"},{title:"Wanna join us?",adress:"/joinus"},{title:"Login",adress:"/login"}]}
+const arabe = {title : "كيوكوشينكاي", menulist :[{title:"الصفحة الرئيسية",adress:"/"},{title: "هل تريد الانضمام",adress:"/joinus"},{title:"تسجيل",adress:"/login"}]}
+const français = {title : "Kyokushinkai", menulist :[{title:"Accueil",adress:"/"},{title:"Voulez-vous rejoindre?",adress:"/joinus"},{title:"s'inscrir",adress:"/login"}]}
 const Data = () =>{
 const {language} = useContext(Socketcontext)
-if(language === "englais"){
+if(language === "anglais"){
     return anglais
 }
 else if (language === "arabe") {
@@ -13,7 +13,7 @@ else if (language === "arabe") {
     
 }
 else {
-    return "no data"
+    return français
 }
 }
 export default Data ;

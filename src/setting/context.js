@@ -1,7 +1,7 @@
 import React ,{createContext,useState} from "react";
 const Socketcontext = createContext() ; 
 const Mycontext = ({children}) => {
-const [language,setlanguage] = useState("englais")
+const [language,setlanguage] = useState("anglais")
 
 
 

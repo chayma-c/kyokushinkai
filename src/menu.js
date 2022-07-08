@@ -39,7 +39,7 @@ setlanguage(languagelocal)
       {list}
       <s.selectlanguage onChange={()=> changeLanguage()} id = "language" >
           <option>
-          englais
+          anglais
           </option>
           <option>
             francais
