@@ -1,3 +1,4 @@
+import {Socketcontext} from "../../setting/context"
 export const belt=[{beltname:"white",img:"https://www.nicepng.com/png/full/397-3976944_karate-white-belt.png", adress :"belt/white"},
 {beltname:"orange",img:"https://www.clipartmax.com/png/full/422-4223141_bjj-orange-belt-karate-orange-belt-clipart.png", adress :"belt/orange"},
 {beltname:"blue",img:"https://www.clipartmax.com/png/full/124-1241153_bournemouth-mixed-martial-arts-star-brings-home-bronze-blue-belt-bjj.png", adress :"belt/blue"},
