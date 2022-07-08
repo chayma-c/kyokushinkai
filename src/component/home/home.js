@@ -30,7 +30,7 @@ const Home = () => {
         
         
             <s.title>
-              Kyokoshinkai
+              {localdata.title}
             </s.title>
             <s.kyo_text>
       {localdata.text}

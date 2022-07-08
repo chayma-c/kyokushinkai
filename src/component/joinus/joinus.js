@@ -1,12 +1,13 @@
 import React from 'react'
 import * as s from "./joinus.style"
-import * as d from "./joinus.data"
+import Data from "./joinus.data"
 const Joinus = () => {
+  const localvariable = Data()
   return (
     <s.Maincontainer>
       
    <s.Title>
-     {d.joinustitle}
+     {localvariable.title}
       </s.Title>
 
 
