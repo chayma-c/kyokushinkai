@@ -36,3 +36,9 @@ export const title=styled.div`
 font-family: 'Smooch', cursive;
 font-size:2.5rem;
 `
+export const selectlanguage  = styled.select`
+font-size : 1.5rem ;
+background : none ; 
+border : none ;  
+
+`

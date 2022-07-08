@@ -81,7 +81,7 @@ boder : 5px solid black ;
 `
 export const belt=styled.div`
 display:flex;
-
+width: 30% ; 
 flex-direction : column ; 
 margin-top:40px;
 margin-left:-40px;

@@ -1,10 +1,14 @@
-import React,{useState} from 'react'
+import React,{useState,useContext} from 'react'
 import * as s from "./menu.style"
-import * as d from "./menu.data"
+import  Data from "./menu.data"
 import { Link } from 'react-router-dom'
+import {Socketcontext} from "./setting/context"
 const Menu = () => {
-  const [name,setname]=useState(d.menulist[0].title)
-  const list=d.menulist.map((element)=>{
+ const localdata = Data()
+  const {  language , setlanguage} = useContext(Socketcontext)
+  console.log("test",localdata)
+  const [name,setname]=useState(localdata.menulist[0].title)
+  const list=localdata.menulist.map((element)=>{
     const isselect= element.title===name
     return(
       <div>
@@ -16,15 +20,34 @@ const Menu = () => {
       </div>
     )
   })
+  console.log(language)
   const changename=(name1)=>{
     setname(name1)
+  }
+  const changeLanguage = () =>{
+const languagelocal = document.getElementById("language").value
+setlanguage(languagelocal)
+
+
   }
   return (
     <s.page>
       <s.title>
-        {d.title}
+        {localdata.title}
+       
       </s.title>
       {list}
+      <s.selectlanguage onChange={()=> changeLanguage()} id = "language" >
+          <option>
+          englais
+          </option>
+          <option>
+            francais
+          </option>
+          <option>
+            arabe
+          </option>
+        </s.selectlanguage>
       </s.page>
   )
 }
