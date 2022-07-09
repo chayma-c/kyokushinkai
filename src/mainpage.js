@@ -6,7 +6,7 @@ import {Routes,
     Route,
   } from "react-router-dom";
 import Home from "./component/home/home";
-import Contact from "./component/contact";
+import Contact from "./component/Log/Log";
 import Joinus from "./component/joinus/joinus";
 const Mainpage=()=>{
   const [loding,is_loding]=useState(true)

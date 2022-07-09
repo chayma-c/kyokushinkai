@@ -39,7 +39,7 @@ const transition1= keyframes`
   }
 
    100%{
-    right:20%;
+    right:25%;
     color:white;
     
   }
@@ -65,7 +65,7 @@ padding-top:30vh;
 `
 export const animation=styled.img`
 height:450px;
-width:250px;
+width:15%;
 position:absolute;
 top:20%;
 left:40%;
