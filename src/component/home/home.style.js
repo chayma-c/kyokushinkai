@@ -81,12 +81,13 @@ boder : 5px solid black ;
 `
 export const belt=styled.div`
 display:flex;
-width: 30% ; 
+width: 60% ; 
 flex-direction : column ; 
 margin-top:40px;
 margin-left:-40px;
 margin-left : 4% ; 
-
+border : 3px black solid ; 
+backdrop-filter: blur(10px);
 `
 
 export const img_belt=styled.img`

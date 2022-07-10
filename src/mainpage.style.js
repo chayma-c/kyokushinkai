@@ -92,5 +92,5 @@ height :50% ;
 animation: ${transition1} 4s;
 position:absolute;
 top:20%;
-right:20%;
+right:25%;
 `
