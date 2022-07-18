@@ -1,9 +1,9 @@
 import {Socketcontext} from "../../setting/context"
 import {useContext} from "react"
 
-const anglais = {title : "welcome to our community"}
-const arabe = {title : "مرحبا بك في مجموعتنا"}
-const français = {title : "bienvienu a notre groupes"}
+const anglais = {Logintitle : "welcome Login space"}
+const arabe = {Logintitle : "مرحبا بك في مجموعتنا"}
+const français = {Logintitle : "bienvienu a notre groupes"}
 const Data = () => {
 
     const {language} = useContext(Socketcontext)

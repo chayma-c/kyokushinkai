@@ -6,7 +6,7 @@ import {Routes,
     Route,
   } from "react-router-dom";
 import Home from "./component/home/home";
-import Contact from "./component/Log/Log";
+import Login from "./component/Log/Log";
 import Joinus from "./component/joinus/joinus";
 const Mainpage=()=>{
   const [loding,is_loding]=useState(true)
@@ -31,7 +31,7 @@ setTimeout(() => {
             <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="/joinus" element={ <Joinus/> } />
-        <Route path="/contact" element={ <Contact/> } />
+        <Route path="/login" element={ <Login/> } />
       </Routes>
       </s.body>
         </s.main_container>

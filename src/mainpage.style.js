@@ -55,12 +55,12 @@ const background = keyframes`
 `
 
 export const main_container=styled.div`
-min-height:300vh;
+min-height:100vh;
 background-color: #ff6b6b;
 background-image: linear-gradient(315deg, #ff6b6b 0%, #d3d3d3 74%);
 `
 export const body=styled.div`
-min-height:200vh;
+min-height:100;
 padding-top:30vh;
 `
 export const animation=styled.img`
