@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import {css} from '@emotion/react'
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 </style>
