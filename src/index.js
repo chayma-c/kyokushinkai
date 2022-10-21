@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Mainpage from './mainpage';
-import {  BrowserRouter as Router } from "react-router-dom";
-import  {Mycontext} from "./setting/context"
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import {  BrowserRouter as Router  } from "react-router-dom";
+import  {Mycontext } from "./setting/context"
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+   
 root.render(
   <React.StrictMode>
    

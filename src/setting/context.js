@@ -2,13 +2,16 @@ import React ,{createContext,useState} from "react";
 const Socketcontext = createContext() ; 
 const Mycontext = ({children}) => {
 const [language,setlanguage] = useState("anglais")
-
-
-
+const [screenwidthLarge,setscreenwidthLarge] = useState(true)
+const [screenwidtMedium,setscreenwidthMedium] = useState(true)
+const [screenwidthSmall,setscreenwidthSmall] = useState(true)
 
 return(
     <Socketcontext.Provider value={{
-        language , setlanguage
+        language , setlanguage , screenwidthLarge,setscreenwidthLarge ,
+        screenwidtMedium,setscreenwidthMedium , 
+        screenwidthSmall,setscreenwidthSmall
+
     }}>
 {children}
     </Socketcontext.Provider>

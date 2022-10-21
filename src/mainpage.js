@@ -8,7 +8,31 @@ import {Routes,
 import Home from "./component/home/home";
 import Login from "./component/Log/Log";
 import Joinus from "./component/joinus/joinus";
+import { useContext } from 'react';
+import { Socketcontext } from "./setting/context";
 const Mainpage=()=>{
+  const {setscreenwidthSmall ,} = useContext(Socketcontext)
+  useEffect(()=>{
+
+    const UpadtescreensizeH = () => {
+     
+      if(window.innerWidth < 580){
+          return setscreenwidthSmall("small");
+      }
+      else if ((window.innerWidth < 1000) && (window.innerWidth > 590) ){
+
+      }
+      
+  }
+
+      window.addEventListener('resize',UpadtescreensizeH);
+    
+      return () => window.removeEventListener('resize', UpadtescreensizeH());
+  } 
+  
+  
+  
+  )
   const [loding,is_loding]=useState(true)
   useEffect(()=>{
 setTimeout(() => {
