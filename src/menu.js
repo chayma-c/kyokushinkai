@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom'
 import {Socketcontext} from "./setting/context"
 const Menu = () => {
  const localdata = Data()
-  const {  language , setlanguage} = useContext(Socketcontext)
-  console.log("test",localdata)
+  const {  language , setlanguage,screenwidthLarge,screenwidtMedium, screenwidthSmall} = useContext(Socketcontext)
+  console.log("test",screenwidthSmall)
   const [name,setname]=useState(localdata.menulist[0].title)
   const list=localdata.menulist.map((element)=>{
     const isselect= element.title===name
     return(
-      <div>
+      <s.listmenu>
         <Link to ={element.adress} style={{textDecoration:"none",color:"black"}}>
         <s.item onClick={()=>changename(element.title)} isselected={isselect}>
           {element.title}
         </s.item>
         </Link>
-      </div>
+      </s.listmenu>
     )
   })
   console.log(language)
@@ -31,13 +31,18 @@ setlanguage(languagelocal)
 
   }
   return (
-    <s.page>
-      <s.title>
+   
+<s.page isLarge = {screenwidthLarge}>
+<s.title>
         {localdata.title}
        
       </s.title>
-      {list}
-      <s.selectlanguage onChange={()=> changeLanguage()} id = "language" >
+      <div>
+
+    
+      {screenwidthLarge ? <s.listmenu> {list}</s.listmenu> : <div></div>}
+      </div>
+      { screenwidthLarge ? <s.selectlanguage onChange={()=> changeLanguage()} id = "language" >
           <option>
           anglais
           </option>
@@ -47,7 +52,10 @@ setlanguage(languagelocal)
           <option>
             arabe
           </option>
-        </s.selectlanguage>
+        </s.selectlanguage> : <div> </div> }
+      
+     
+      
       </s.page>
   )
 }

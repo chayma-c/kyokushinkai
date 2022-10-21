@@ -3,8 +3,8 @@ const Socketcontext = createContext() ;
 const Mycontext = ({children}) => {
 const [language,setlanguage] = useState("anglais")
 const [screenwidthLarge,setscreenwidthLarge] = useState(true)
-const [screenwidtMedium,setscreenwidthMedium] = useState(true)
-const [screenwidthSmall,setscreenwidthSmall] = useState(true)
+const [screenwidtMedium,setscreenwidthMedium] = useState(false)
+const [screenwidthSmall,setscreenwidthSmall] = useState(false)
 
 return(
     <Socketcontext.Provider value={{

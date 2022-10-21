@@ -11,15 +11,26 @@ import Joinus from "./component/joinus/joinus";
 import { useContext } from 'react';
 import { Socketcontext } from "./setting/context";
 const Mainpage=()=>{
-  const {setscreenwidthSmall ,} = useContext(Socketcontext)
+  const {setscreenwidthSmall ,setscreenwidthMedium, setscreenwidthLarge } = useContext(Socketcontext)
   useEffect(()=>{
 
     const UpadtescreensizeH = () => {
      
-      if(window.innerWidth < 580){
-          return setscreenwidthSmall("small");
+      if(window.innerWidth < 650){
+          setscreenwidthSmall(true);
+          setscreenwidthLarge(false) 
+          setscreenwidthMedium(false)
       }
-      else if ((window.innerWidth < 1000) && (window.innerWidth > 590) ){
+      else if ((window.innerWidth < 1000) && (window.innerWidth > 650) ){
+        setscreenwidthMedium(true)
+        setscreenwidthLarge(false) 
+        setscreenwidthSmall(false)
+
+      }
+      else if (window.innerWidth > 1000) {
+        setscreenwidthLarge(true)
+        setscreenwidthMedium(false) 
+        setscreenwidthSmall(false)
 
       }
       

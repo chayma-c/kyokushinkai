@@ -6,22 +6,22 @@ import styled from "@emotion/styled";
 export const page=styled.div`
 z-index:1000;
 backdrop-filter: blur(100px);
-height:5%;
+height:15%;
 position:fixed;
 top:0;
 left:0;
 width:100%;
 transition:height 2s;
-display:flex;
+display: ${p=> p.isLarge ?  "flex" : "block"};
 justify-content:space-evenly;
 align-items:center;
 padding-top:1%;
 padding-bottom:1%;
 font-size:2rem;
 font-family: 'Playball', cursive;
-transition:height 1s;
+transition: 1s;
 &:hover{
-    height:15%;
+    height:20%;
 }`
 export const item=styled.div`
 opacity:${p=>p.isselected ?"1":"0.4"};
@@ -35,10 +35,19 @@ font-size:2.2rem;
 export const title=styled.div`
 font-family: 'Smooch', cursive;
 font-size:2.5rem;
+text-align:center ; 
+transition  : 2s ; 
 `
 export const selectlanguage  = styled.select`
 font-size : 1.5rem ;
 background : none ; 
 border : none ;  
+
+`
+export const listmenu = styled.div`
+min-width : 55% ; 
+display:flex;
+justify-content:space-evenly;
+align-items:center;
 
 `
