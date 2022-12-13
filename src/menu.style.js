@@ -13,7 +13,7 @@ left:0;
 width:100%;
 transition:height 2s;
 display: ${p=> p.isLarge ?  "flex" : "block"};
-justify-content:space-evenly;
+justify-content:space-around;
 align-items:center;
 padding-top:1%;
 padding-bottom:1%;
@@ -37,6 +37,7 @@ font-family: 'Smooch', cursive;
 font-size:2.5rem;
 text-align:center ; 
 transition  : 2s ; 
+
 `
 export const selectlanguage  = styled.select`
 font-size : 1.5rem ;
@@ -47,7 +48,7 @@ border : none ;
 export const listmenu = styled.div`
 min-width : 55% ; 
 display:flex;
-justify-content:space-evenly;
+justify-content:space-evenly ;
 align-items:center;
-
+width  :  100% ; 
 `

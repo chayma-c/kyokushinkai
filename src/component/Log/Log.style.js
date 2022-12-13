@@ -32,7 +32,9 @@ width : 250px  ;
 height : 70px ;  
 border-radius  : 20px ; 
 box-shadow : 0 0px 14px rgba(0,0,0,25),0 10px 10px rgba(0,0,0,0.22);
-position : relative ; 
+position : fixed ;  
+top : 20% ; 
+left : 5% ; 
 cursor : pointer ; 
 `
 export const seprateligne = styled.div`

@@ -22,13 +22,13 @@ const Login = () => {
       {localdata.sub}
       </s.rightpart>
       </s.buttonsection>
-      {
-        login ?   <s.Title>  {localdata.Logintitle}</s.Title>  : <s.Title> hello again</s.Title> 
-      }
+      
      
       </s.topsection>
       <s.bodysection>
-        
+      {
+        login ?   <s.Title>  {localdata.Logintitle}</s.Title>  : <s.Title> {localdata.subtitle} </s.Title> 
+      }
       </s.bodysection>
     </s.cadre>
     
